@@ -136,6 +136,7 @@ ROUND(
     SUM(Horas_Parada) OVER(ORDER BY Horas_Parada DESC)
     / SUM(Horas_Parada) OVER() * 100, 2
 )
+```
 
 📈 Power BI — Análise
 Estratégia
