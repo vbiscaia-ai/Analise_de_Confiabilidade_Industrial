@@ -20,6 +20,7 @@ Este projeto transforma dados brutos de alarmes industriais em **insights acion�
 O objetivo é identificar **máquinas críticas**, reduzir indisponibilidade e orientar decisões de manutenção com base em dados.
 
 ---
+![Dashboard de Confiabilidade Industrial](Assets/print_pg1.png)
 
 ## 🏗️ Arquitetura
 
@@ -152,29 +153,30 @@ MTTR = DIVIDE(SUM(Fact_Paradas[MTTR_Amplo]), [Falhas]) / 60
 
 MTBF = DIVIDE(SUM(Fact_Paradas[MTBF_Amplo]), [Falhas]) / 60
 
-📊 Dashboards
+## 📊 Dashboards
 
-🟢 Pareto de Indisponibilidade
+## 🟢 Pareto de Indisponibilidade
 Identificação das máquinas responsáveis por ~80% do tempo de parada
-🟡 Mapa de Criticidade
+####🟡 Mapa de Criticidade
 Scatter (MTBF vs MTTR)
 Análise de frequência vs impacto
-🔴 Análise Dinâmica
+## 🔴 Análise Dinâmica
 Alternância entre:
 Eventos críticos (baixo volume, alto impacto)
 Falhas recorrentes (alta frequência)
-💡 Principais Insights
+
+## 💡 Principais Insights
 Pequeno grupo de máquinas concentra a maior parte da indisponibilidade
 Máquinas com poucas falhas podem gerar alto impacto operacional
 Alta recorrência indica necessidade de manutenção preventiva
 Padrões de tempo de parada sugerem processos operacionais padronizados
 
-🎯 Modelo de Criticidade
+## 🎯 Modelo de Criticidade
 (Impacto * 0.5) +
 (Frequência * 0.3) +
 (Disponibilidade * 0.2)
 
-💣 Diferenciais do Projeto
+## 💣 Diferenciais do Projeto
 
 ✔ Uso de CTEs e Window Functions
 ✔ Modelagem Star Schema
@@ -183,14 +185,14 @@ Padrões de tempo de parada sugerem processos operacionais padronizados
 ✔ Aplicação do princípio de Pareto (80/20)
 ✔ Separação entre eventos críticos e recorrentes
 
-🚀 Evoluções Futuras
+## 🚀 Evoluções Futuras
 Classificação automática de paradas (corretiva vs preventiva)
 Integração com SAP PM / Work Orders
 Análise de confiabilidade avançada (Weibull, survival analysis)
 Carga incremental de dados
 Cálculo de OEE por período
 
-📌 Conclusão
+## 📌 Conclusão
 
 Este projeto demonstra uma abordagem prática de:
 
