@@ -139,13 +139,13 @@ ROUND(
 )
 ```
 
-📈 Power BI — Análise
+## 📈 Power BI — Análise
 Estratégia
 Importação da tabela fato sem agregação
 Criação de métricas via DAX
 Separação entre camada de dados e camada analítica
 
-📊  Principais Métricas
+## 📊  Principais Métricas
 
 Falhas = COUNT(Fact_Paradas[ParadaID])
 
